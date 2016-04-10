@@ -1,0 +1,149 @@
+html {
+	font-family: Verdana, Arial, sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+	html {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		border: none;	
+	}
+
+	.sliderbox {
+		display: inline-flex;
+		flex-direction: row;
+		align-items: center;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+	.modebox {
+		display: inline-flex;
+		flex-direction: row;
+		align-items: stretch;
+		vertical-align: middle;
+		width: 100%;
+	}	
+
+	.modeBtn {
+		flex-basis: auto;
+		flex-grow: 1;
+		text-align: center;
+		border: 1px solid #cccccc;
+	}
+
+	.btnLbl {
+		padding-top: 20%;
+		padding-bottom: 20%;
+		line-height: 40px;
+	}
+
+	.slabel {
+		margin-right: 5px;
+	}
+
+	.svalue {
+		margin-right: 5px;
+		min-width: 3em;
+	}
+
+	#threed {
+		display: inline-block;
+	}
+	#canvas {
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#threed {
+		display: block;
+		margin: auto;
+	}
+	#canvas {
+		display: block;
+		margin: auto;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.sliderbox {
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+		vertical-align: top;
+		height: 100%;
+	}
+
+	.modebox {
+		display: inline-flex;
+		flex-direction: column;
+		align-items: stretch;
+		vertical-align: top;
+		height: 100%;
+	}	
+
+	.modeBtn {
+		flex-basis: auto;
+		flex-grow: 1;
+		text-align: center;
+		border: 1px solid #cccccc;
+/*		padding-top: 50%;
+		padding-bottom: 50%;*/
+	}
+
+	.btnLbl {
+		line-height: 50px;
+	}
+
+	.svalue {
+		min-width: 2em;
+		margin-bottom: 5px;
+	}
+
+	#threed {
+		display: inline-block;
+	}
+	#canvas {
+		display: inline-block;
+	}
+}
+
+
+
+.modeBtn.active {
+	background-color: #aaaaaa;
+}
+
+.sliderbox .slabel {
+	flex-basis: auto;
+	flex-grow: 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+.slabel.disabled {
+	color: #ccc;
+}
+
+.sliderbox .svalue {
+	flex-basis: auto;
+	flex-grow: 0;
+	text-align: center;
+}
+
+.svalue.disabled {
+	color: #ccc;
+}
+
+
+.sliderbox .hclSlider {
+	flex-grow: 1;
+}
+
